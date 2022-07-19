@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basketball Scoreboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3 class="score-display">HOME</h3>
+        <div class="score-display-board" id="score-display-home">0</div>
+        <div class="score-buttons-div">
+          <button class="score-buttons" onclick="button1Home()">+1</button>
+          <button class="score-buttons" onclick="button2Home()">+2</button>
+          <button class="score-buttons" onclick="button3Home()">+3</button>
+        </div>
+      </div>
+      <div>
+        <h3 class="score-display">GUEST</h3>
+        <div class="score-display-board" id="score-display-guest">0</div>
+        <div class="score-buttons-div">
+          <button class="score-buttons" onclick="button1Guest()">+1</button>
+          <button class="score-buttons" onclick="button2Guest()">+2</button>
+          <button class="score-buttons" onclick="button3Guest()">+3</button>
+        </div>
+      </div>
+    </div>
+    <div id="clear">
+      <button id="clearBoard" onclick="clearBoard()">Clear Scoreboard</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
